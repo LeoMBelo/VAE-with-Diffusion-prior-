@@ -1,0 +1,11 @@
+Nesta versão, temos as seguintes simplificações:
+* Pouco uso da estrutura DCGAN
+    - Redes mais simples sem Batch Normalization e poucas camadas
+* Betas fixos e lineares
+* Função de ativação padrão no prior DDPM
+
+
+Resultados:
+* MNIST: Bons resultados na geração de novas imagens, mas nem todas consistentes. O baixo valor de FID (~ 45) provavelmente se deve a baixa complexidade do conjunto de dados.
+* CIFAR10: Resultados não expressivos, pois o FID dá alto (~240) e as imagens geradas não de boa qualidade, mas, visualmente, muitas são "parecidas" com o do artigo. 
+  - Como o CIFAR10 já possui uma uma complexidade moderada a baixa e as classes são bem divergentes (ex: gato e navio) acho que isso contribui para o baixo desempenho.
