@@ -1,0 +1,3 @@
+A versão mais completa engloba:
+* Arquitetura similar ao DCGAN (Radford et al., 2015)
+* Beta schedule cossine
